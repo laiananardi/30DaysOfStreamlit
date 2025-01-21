@@ -1,5 +1,4 @@
 ![image](https://user-images.githubusercontent.com/98417654/193184571-a09d7fbe-3378-4de1-af2a-a13748ab0861.png)
-
 # **#30DaysOfStreamlit Challenge**  
 
 Welcome to my **#30DaysOfStreamlit** journey! 🚀 This repository documents my progress as I explore Streamlit, a Python framework for building interactive web apps.  
@@ -34,6 +33,7 @@ I’ll be updating this repository daily with:
 - Code snippets and apps I build  
 - Notes on what I’ve learned  
 - Screenshots or GIFs of my apps in action  
+- Follow my updates on **[LinkedIn](https://www.linkedin.com/in/laiana-santiago/)** as well!
 
 ---
 
@@ -49,5 +49,4 @@ You can explore my progress day by day in this repository. Feel free to clone it
 Let’s learn and build together! 🙌  
 
 ---
-
 
