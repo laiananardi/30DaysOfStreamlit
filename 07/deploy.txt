@@ -7,3 +7,7 @@ Click Deploy
 Then any time you do a git push your app will update immediately.
 
 https://streamlit.io/cloud
+
+
+you need to also add a requirements.txt to your project.
+pip freeze > requirements.txt
