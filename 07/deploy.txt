@@ -1,0 +1,9 @@
+Deploy a Streamlit app
+To deploy a Streamlit app, do the following:
+
+Sign in with GitHub or Gmail credentials
+Pick a repo, branch and file
+Click Deploy
+Then any time you do a git push your app will update immediately.
+
+https://streamlit.io/cloud
