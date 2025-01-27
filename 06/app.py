@@ -1,5 +1,4 @@
-# dataset from: https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset/code
-
+# dataset from: https://www.kaggle.com/datasets/charunisa/chatgpt-sentiment-analysis/data
 
 import streamlit as st
 import pandas as pd
@@ -9,12 +8,13 @@ import altair as alt
 from wordcloud import WordCloud, STOPWORDS
 import re
 
-df = pd.read_csv('assets/train.csv', encoding='unicode_escape')
+df = pd.read_csv('assets/file.csv')
 df.dropna(inplace=True)
-df = df[['text', 'sentiment']]
-st.header('Tweet Sentiment Analysis App')
 
-st.write('Welcome to the Tweet Sentiment Analysis App! Explore insights from tweets, including sentiment distribution, frequent words, and user demographics.')
+df = df[['tweets', 'labels']]
+st.header('ChatGPT Sentiment Analysis Dashboard')
+
+st.write('Analyze tweets about ChatGPT! See sentiment trends, explore the data, view word clouds, and check text length.')
 
 # Data Table Section
 st.header("Dataset Preview")
@@ -29,10 +29,10 @@ st.header("Sentiment Distribution")
 
 
 sentiment_chart = alt.Chart(df).mark_bar().encode(
-    x='sentiment',
+    x='labels',
     y='count()',
-    color=alt.Color('sentiment', 
-                    scale=alt.Scale(domain=['neutral', 'positive', 'negative'],
+    color=alt.Color('labels', 
+                    scale=alt.Scale(domain=['neutral', 'good', 'bad'],
                     range=['#1f77b4', '#2ca02c', '#d62728'])
                     ), 
 ).properties(
@@ -61,10 +61,10 @@ if st.button("Generate Word Cloud by Sentiment"):
     if sentiment == 'All':
         filtered_df = df
     else:
-        filtered_df = df[df['sentiment'] == sentiment.lower()]
+        filtered_df = df[df['labels'] == sentiment.lower()]
     
     # Clean all tweet texts
-    cleaned_tweets = " ".join(df['text'].apply(clean_text))
+    cleaned_tweets = " ".join(df['tweets'].apply(clean_text))
 
     # Create a word cloud from the filtered text, excluding stopwords
     wordcloud = WordCloud(
@@ -85,7 +85,7 @@ if st.button("Generate Word Cloud by Sentiment"):
 
 # Text Length Distribution
 
-df['text_length'] = df['text'].str.len()
+df['text_length'] = df['tweets'].str.len()
 
 st.header("Text Length Distribution:")
 chart = alt.Chart(df).mark_bar().encode(
