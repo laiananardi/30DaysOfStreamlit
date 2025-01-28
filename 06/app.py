@@ -7,7 +7,7 @@ import altair as alt
 from wordcloud import WordCloud, STOPWORDS
 import re
 
-df = pd.read_csv('assets/file.csv')
+df = pd.read_csv('06/assets/file.csv')
 df.dropna(inplace=True)
 
 df = df[['tweets', 'labels']]
