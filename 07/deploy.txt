@@ -1,13 +1,19 @@
-Deploy a Streamlit app
-To deploy a Streamlit app, do the following:
+How to Deploy a Streamlit App
 
-Sign in with GitHub or Gmail credentials
-Pick a repo, branch and file
-Click Deploy
-Then any time you do a git push your app will update immediately.
+1. Sign In:
+   - Use your GitHub or Gmail credentials to sign in to Streamlit Cloud: https://streamlit.io/cloud
 
-https://streamlit.io/cloud
+2. Deploy the App:
+   - Select the repository, branch, and file that contains your Streamlit app.
+   - Click "Deploy."
 
+3. Automatic Updates:
+   - After deployment, any time you run `git push`, your app will update automatically.
 
-you need to also add a requirements.txt to your project.
-pip freeze > requirements.txt
+Additional Information:
+
+- Ensure your project includes a `requirements.txt` file.
+- To generate this file automatically, use the following command:
+  pip freeze > requirements.txt
+- Place the `requirements.txt` file in the root directory of your repository.
+- Use relative paths for all file references in your app (e.g., `assets/file.csv`).
