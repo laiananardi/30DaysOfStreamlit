@@ -1,0 +1,11 @@
+https://docs.streamlit.io/develop/api-reference/write-magic/st.write
+https://docs.streamlit.io/develop/api-reference/text/st.markdown
+https://docs.streamlit.io/develop/api-reference/text/st.header
+https://docs.streamlit.io/develop/api-reference/text/st.subheader
+https://docs.streamlit.io/develop/api-reference/text/st.caption
+https://docs.streamlit.io/develop/api-reference/text/st.text
+https://docs.streamlit.io/develop/api-reference/text/st.latex
+https://docs.streamlit.io/develop/api-reference/text/st.code
+https://docs.streamlit.io/develop/api-reference/widgets/st.select_slider
+https://docs.streamlit.io/develop/api-reference/charts/st.altair_chart
+https://docs.streamlit.io/develop/api-reference/charts/st.line_chart
