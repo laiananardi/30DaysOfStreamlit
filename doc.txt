@@ -14,3 +14,4 @@ https://docs.streamlit.io/develop/api-reference/widgets/st.selectbox
 https://docs.streamlit.io/develop/api-reference/widgets/st.multiselect
 https://docs.streamlit.io/develop/api-reference/widgets/st.checkbox
 https://docs.streamlit.io/develop/concepts/custom-components
+https://docs.streamlit.io/develop/concepts/configuration/theming
