@@ -17,3 +17,4 @@ https://docs.streamlit.io/develop/concepts/custom-components
 https://docs.streamlit.io/develop/concepts/configuration/theming
 https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management
 https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
+https://docs.streamlit.io/develop/api-reference/widgets/st.file_uploader
