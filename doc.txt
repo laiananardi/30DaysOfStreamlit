@@ -20,3 +20,4 @@ https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
 https://docs.streamlit.io/develop/api-reference/widgets/st.file_uploader
 https://docs.streamlit.io/develop/api-reference/layout
 https://docs.streamlit.io/develop/api-reference/status/st.progress
+https://docs.streamlit.io/develop/api-reference/execution-flow/st.form
