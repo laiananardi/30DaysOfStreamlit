@@ -22,3 +22,4 @@ https://docs.streamlit.io/develop/api-reference/layout
 https://docs.streamlit.io/develop/api-reference/status/st.progress
 https://docs.streamlit.io/develop/api-reference/execution-flow/st.form
 https://docs.streamlit.io/develop/api-reference/caching-and-state/st.query_params
+https://docs.streamlit.io/develop/api-reference/caching-and-state/st.cache_data
