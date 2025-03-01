@@ -48,16 +48,21 @@ elif section == "English Learning Word Quiz":
         except:
             return "hello"  # Fallback word if API fails
 
+
     def get_word_details(word):
         """Fetches part of speech, definition, and an example sentence using NLTK's WordNet."""
-        synsets = wordnet.synsets(word)
+        try:
+            synsets = wordnet.synsets(word)
 
-        if synsets:
-            definition = synsets[0].definition()  # Definition
-            example = synsets[0].examples()[0] if synsets[0].examples() else "No example available."
-            return definition, example
-
-        return "N/A", "No definition found.", "No example found."
+            if synsets:
+                definition = synsets[0].definition()  # Definition
+                example = synsets[0].examples()[0] if synsets[0].examples() else "No example available."
+                return definition, example
+            else:
+                return "No definition found.", "No example found."
+        except Exception as e:
+            # If there is any error, return fallback messages
+            return "An error occurred while fetching word details.", "No example found."
 
     def text_to_speech(text, lang):
         """Convert text to speech and return an in-memory audio file."""
